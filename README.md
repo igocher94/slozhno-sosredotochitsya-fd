@@ -19,4 +19,4 @@
 
 ## Ссылки
 
-- [Макет в Figma](https://www.figma.com/file/GBRMBgp7Ef8KLkGvwMXfBi/Сложно-сосредоточиться)
+- [Репозиторий на GitHub](https://github.com/igocher94/slozhno-sosredotochitsya-fd)
