@@ -1,5 +1,347 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* ===== PAGE ===== */
+
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: 1.3;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* ===== TITLE-DECOR (shared) ===== */
+
+.title-decor {
+  color: var(--title-decor-color);
+  background-color: var(--title-decor-bg);
+  font-weight: var(--title-font-weight);
+}
+
+/* ===== DECORATED-ZONE (corners + shared header/footer) ===== */
+
+.decorated-zone {
+  position: relative;
+  display: grid;
+  padding: 10px;
+  block-size: 100vh;
+  min-block-size: 668px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--corner-color);
+  border-block-start: 1px solid var(--corner-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--corner-color);
+  border-block-end: 1px solid var(--corner-color);
+}
+
+/* ===== HEADER ===== */
+
+.header {
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header__rec {
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 38px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--rec-color);
+  font-size: var(--main-font-size);
+  line-height: 1.39;
+}
+
+.header__rec::after {
+  content: "";
+  display: inline-block;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--rec-color);
+  box-shadow: 0 0 4px 2px var(--rec-color);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  padding: 1.5px 13px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--btn-color);
+  cursor: pointer;
+  text-transform: lowercase;
+  line-height: 1.83;
+}
+
+.header__theme-menu-button:hover {
+  border-color: var(--btn-hover-border-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end-color: var(--btn-color);
+}
+
+.header__theme-menu-button_active {
+  border-color: var(--btn-color);
+  pointer-events: none;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: var(--title-font-weight);
+  line-height: 0.825;
+  color: var(--heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__text {
+  align-self: center;
+}
+
+/* ===== MAIN ===== */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px 10px;
+}
+
+/* ===== SECTIONS ===== */
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.section__title {
+  font-size: var(--main-font-size);
+  font-weight: var(--title-font-weight);
+  color: var(--heading-color);
+}
+
+.section__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== CARDS ===== */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__title {
+  font-size: var(--main-font-size);
+}
+
+.card__title-regular {
+  font-weight: var(--main-font-weight);
+}
+
+.card__text {
+  line-height: 1.3;
+}
+
+.card__link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--link-shadow-color);
+}
+
+.card__link:hover {
+  border-block-end: 1px solid var(--link-color);
+}
+
+.card__link:focus {
+  outline: none;
+}
+
+.card__link:focus-visible {
+  outline: 1px solid var(--link-color);
+}
+
+/* ===== GALLERY ===== */
+
+.section-gallery {
+  gap: 10px;
+}
+
+.section__gallery-title {
+  font-size: var(--main-font-size);
+}
+
+.section__gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.section__gallery-image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  display: grid;
+  place-items: center;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: var(--title-font-weight);
+  line-height: 0.825;
+  color: var(--heading-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+/* ==========================================================
+   MEDIA QUERIES
+   ========================================================== */
+
+/* ---------- Tablet (768px+) ---------- */
+
+@media (width >= 768px) {
+  .decorated-zone {
+    padding: 20px;
+    min-block-size: 1024px;
+  }
+
+  .decorated-zone::before {
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-block-end: 20px;
+    inset-inline-start: 20px;
+  }
+
+  .header__rec {
+    inset-block-start: 20px;
+    inset-inline-end: 48px;
+  }
+
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-inline-start: -20px;
+  }
+
+  .header__text {
+    justify-self: end;
+    inline-size: 50%;
+  }
+
+  .main {
+    gap: 80px;
+    padding: 60px 20px;
+  }
+
+  .section-why {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .section-what .section__title {
+    inline-size: calc(100% / 3);
+  }
+
+  .section-how {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .section-gallery {
+    gap: 20px;
+  }
+
+  .section__gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .section__gallery-image:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .section__gallery-image:nth-child(2) {
+    grid-row: span 2;
+  }
+
+  .section__gallery-image:nth-child(3) {
+    grid-row: span 2;
+  }
+
+  .section__gallery-image:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+/* ---------- Desktop (1024px+) ---------- */
+
+@media (width >= 1024px) {
+  .decorated-zone {
+    min-block-size: 768px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .section-what .section__cards {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .section-what .section__cards .card {
+    flex: 1;
+  }
 }

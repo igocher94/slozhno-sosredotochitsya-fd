@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Сложно сосредоточиться</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      href="./images/mobile-icon.png"
+      sizes="180x180"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <span class="header__rec" aria-hidden="true">REC</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -35,6 +50,222 @@
           </li>
         </ul>
       </nav>
+      <h1 class="header__title">no focus</h1>
+      <p class="header__text title-decor">
+        Что делать, когда не можешь делать ничего.
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
+    <main class="main">
+      <section class="section section-why">
+        <h2 class="section__title">Почему сосредоточиться так сложно</h2>
+        <div class="section__cards">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Особенно сложно сосредоточиться, когда задач много и все
+              они — важные. Где же тут сосредоточиться, когда
+              у&nbsp;тебя несколько дедлайнов на носу и
+              при этом надо не забыть сходить в аптеку и
+              ещё определиться, что ты будешь есть на ужин.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Дофамин</h3>
+            <p class="card__text">
+              С&nbsp;каждым лайком, комментарием и уведомлением наш мозг
+              получает дофамин — вещество, которое вызывает ощущение
+              удовольствия. Получается замкнутый круг: чем больше
+              скроллишь ленту, тем больше дофамина, тем больше хочется
+              скроллить ленту. А если определённое время залипать в
+              телефон, мозг может начать требовать дофамин постоянно,
+              создавая «дофаминовую зависимость». Поэтому нам так
+              сложно начать выполнять рабочие задачи, в которых
+              нет мгновенной обратной связи в виде лайков или
+              уведомлений.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Поток</h3>
+            <p class="card__text">
+              Состояние потока характеризуется полным погружением в
+              деятельность. Вы замечали, что когда задача по-настоящему
+              увлекает, концентрация происходит сама собой?
+            </p>
+            <p class="card__text">
+              В этом состоянии мозг полностью задействован в выполнении
+              задачи и переключать внимание для нас — огромное усилие.
+              Не удивительно, что нам сложно сосредоточиться на чём-то
+              одном, когда нас постоянно отвлекают уведомления на
+              телефоне или же мысли о том, что нужно ещё
+              сделать.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section section-what">
+        <h2 class="section__title">Что снижает концентрацию внимания?</h2>
+        <div class="section__cards">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">
+              Как концентрация может снижаться из-за… многозадачности?
+              Причём тут определение многозадачности совсем другое. Здесь
+              мы говорим не о том, сколько дел вам нужно сделать за
+              день, а о количестве вещей, на которые вы обращаете
+              внимание одновременно. Мультитаскинг заставляет мозг
+              постоянно переключаться. Он не может запомнить важные
+              вещи, потому что ему приходится всё время забывать
+              то, над чем он только что работал, чтобы хранить то, на
+              что переключился. И чтобы вернуться к задаче после
+              переключения, мозг тратит дополнительные ресурсы.
+              В&nbsp;итоге ни одно дело не может получить все
+              100% мощности мозга.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Еда</h3>
+            <p class="card__text">
+              «Быстрые углеводы» — Pro или no?
+              Да, те самые, что в белом хлебе, сладостях, белом рисе,
+              кондитерских изделиях, — дают мгновенный скачок
+              глюкозы, который так же быстро проходит и вызывает
+              усталость и сонливость. Постоянные скачки сахара
+              приводят к тому, что мозг устаёт и уже не может
+              нормально работать. К тому же, глюкоза — это один
+              из основных источников энергии для мозга. Когда
+              мы едим много быстрых углеводов, уровень глюкозы
+              постоянно скачет, и мозг не может нормально
+              использовать её для работы.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Гаджеты</h3>
+            <p class="card__text">
+              Да, те самые, которые так и норовят залезть в ваш мозг
+              и украсть внимание. Есть статьи и исследования, которые
+              говорят, что залипание в телефон приводит к тому, что мозг
+              работает хуже. Потому что он постоянно переключается
+              между разными задачами, и из-за этого быстрее устаёт.
+              К тому же, экраны гаджетов излучают синий свет, который
+              может нарушить ваши биоритмы, то есть механизмы
+              организма, связанные со сменой дня и ночи. Результат
+              — сложности с засыпанием. И конечно, как следствие,
+              усталость и сниженная концентрация.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section section-how">
+        <h2 class="section__title">
+          Как концентрироваться лучше, чем золотая рыбка (да, те самые 8
+          секунд)
+        </h2>
+        <div class="section__cards">
+          <article class="card">
+            <h3 class="card__title title-decor">
+              5 простых (на самом деле не очень) советов
+            </h3>
+          </article>
+          <article class="card">
+            <h4 class="card__title card__title-regular title-decor">
+              Представьте небо и облака
+            </h4>
+            <p class="card__text">
+              Или море, лес, степь.
+              Да что угодно. Мысленно представьте объект и
+              сфокусируйтесь на нём полностью. Детально переберите
+              все свойства предмета.
+            </p>
+          </article>
+          <article class="card">
+            <h4 class="card__title card__title-regular title-decor">
+              Включите музыку
+            </h4>
+            <p class="card__text">
+              Но не любую, а ту, что без слов. А ещё лучше — определённый
+              жанр. Послушайте исследование «
+              <a
+                class="card__link"
+                href="https://www.cell.com/heliyon/fulltext/S2405-8440(24)04669-5"
+                target="_blank"
+                >Music for programming</a
+              >».
+            </p>
+          </article>
+          <article class="card">
+            <h4 class="card__title card__title-regular title-decor">
+              Прогуляйтесь
+            </h4>
+            <p class="card__text">
+              Или даже пробежаться. Погуляйте вокруг дома,
+              выйдите на улицу, дойдите до парка, до ближайшего
+              водоёма. Ходьба помогает мозгу «перезагрузиться» и
+              даёт новый приток кислорода — а значит, и энергии.
+            </p>
+          </article>
+          <article class="card">
+            <h4 class="card__title card__title-regular title-decor">
+              Хорошо ешьте
+            </h4>
+            <p class="card__text">
+              Мы — то, что мы едим. Поэтому убедитесь, что начинаете свой
+              день с питательного завтрака, а в течение дня получаете
+              достаточно питательных веществ. Если вам нужен перекус на
+              работе, лучше выберите фрукт или орехи, чем печенье или
+              конфету.
+            </p>
+          </article>
+          <article class="card">
+            <h4 class="card__title card__title-regular title-decor">
+              Читайте
+            </h4>
+            <p class="card__text">
+              Настоящие бумажные книги. Это тренировка для мозга.
+              Чем больше вы читаете — тем лучше. Если
+              читать перед сном, это ещё помогает заснуть.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section section-gallery">
+        <h2 class="section__gallery-title title-decor">А можно в картинках?</h2>
+        <div class="section__gallery">
+          <img
+            class="section__gallery-image"
+            src="./images/sunset.png"
+            alt="Закат в горах с видом на озеро и силуэтами птиц"
+            loading="lazy"
+          />
+          <img
+            class="section__gallery-image"
+            src="./images/ice-cream.png"
+            alt="Весёлое мороженое с фруктами и зонтиками в миске"
+            loading="lazy"
+          />
+          <img
+            class="section__gallery-image"
+            src="./images/tape.png"
+            alt="Аудиокассета в стиле ретро с элементами пиксельной графики"
+            loading="lazy"
+          />
+          <img
+            class="section__gallery-image"
+            src="./images/books.png"
+            alt="Стопка книг с чашкой кофе сверху"
+            loading="lazy"
+          />
+          <img
+            class="section__gallery-image"
+            src="./images/street.png"
+            alt="Улица в японском стиле в перспективе с домами по обе стороны"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer decorated-zone">
+      <h2 class="footer__title">focus</h2>
+    </footer>
   </body>
 </html>
