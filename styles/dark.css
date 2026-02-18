@@ -26,3 +26,28 @@
 :root.theme-dark .header__rec {
   display: flex;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
+    --heading-color: #ff0070;
+    --accent-color: #ff0070;
+    --title-decor-color: #000028;
+    --title-decor-bg: #ff0070;
+    --main-title-color: #db00ff;
+    --main-title-shadow: 4px 4px 0 #ff0070;
+    --footer-title-shadow: 2px 2px 0 #ff0070;
+    --link-color: #f1b2ce;
+    --link-shadow-color: #ff0070;
+    --corner-color: #ff0070;
+    --rec-color: #ff0070;
+    --btn-color: #ff0070;
+    --btn-hover-border-color: rgba(255, 0, 112, 0.4);
+    --bg-image: url(../images/cover-image-dark.png);
+  }
+
+  .header__rec {
+    display: flex;
+  }
+}

@@ -10,7 +10,6 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  overflow-x: clip;
 }
 
 h1,
@@ -32,11 +31,6 @@ ul {
 picture {
   margin: 0;
   padding: 0;
-}
-
-img {
-  display: block;
-  max-inline-size: 100%;
 }
 
 button,
