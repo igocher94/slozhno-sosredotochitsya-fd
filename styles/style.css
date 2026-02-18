@@ -298,11 +298,13 @@
 
   .section__gallery {
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
     gap: 20px;
   }
 
   .section__gallery-image {
     block-size: 100%;
+    inline-size: 100%;
   }
 
   /* sunset: row 1, cols 1-2 */
