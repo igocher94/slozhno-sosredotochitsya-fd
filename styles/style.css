@@ -66,7 +66,7 @@
 .header__rec {
   position: absolute;
   inset-block-start: 10px;
-  inset-inline-end: 38px;
+  inset-inline-end: 19px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -97,7 +97,7 @@
 }
 
 .header__theme-menu-button {
-  padding: 1.5px 13px;
+  padding: 2px 13px;
   background: transparent;
   border: 1px solid transparent;
   color: var(--btn-color);
@@ -180,7 +180,6 @@
 }
 
 .card__text {
-  font-weight: var(--main-font-weight);
   line-height: 1.3;
 }
 
@@ -217,7 +216,6 @@
 }
 
 .section__gallery-image {
-  display: block;
   inline-size: 100%;
   object-fit: cover;
   object-position: center;
@@ -262,7 +260,7 @@
 
   .header__rec {
     inset-block-start: 20px;
-    inset-inline-end: 48px;
+    inset-inline-end: 29px;
   }
 
   .header__title {
@@ -302,9 +300,7 @@
   }
 
   .section__gallery-image {
-    inline-size: 100%;
     block-size: 100%;
-    object-fit: cover;
   }
 
   /* sunset: row 1, cols 1-2 */
