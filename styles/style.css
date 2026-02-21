@@ -298,13 +298,12 @@
 
   .section__gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, minmax(0, 1fr));
     gap: 20px;
   }
 
   .section__gallery-image {
-    block-size: 100%;
     inline-size: 100%;
+    block-size: 100%;
     object-fit: cover;
   }
 
